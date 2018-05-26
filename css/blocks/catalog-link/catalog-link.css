@@ -1,0 +1,32 @@
+.catalog-link {
+	position: relative;
+}
+
+.catalog-link__wrapper {
+	position: absolute;
+	top: 31px;
+	left: -8px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s;
+
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	width: 143px;
+}
+
+.catalog-link:hover .catalog-link__wrapper {
+	visibility: visible;
+	opacity: 1;
+}
+
+.catalog-link__header {
+	color: black;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	line-height: 38px;
+	padding-left: 14px;
+	margin: 0 6px;
+	border-bottom: 1px solid #d1d0ce;
+}

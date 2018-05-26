@@ -1,0 +1,66 @@
+@import 'blocks/header/header.css';
+@import 'blocks/header-navigation/header-navigation.css';
+@import 'blocks/catalog-link/catalog-link.css';
+@import 'blocks/catalog-link-list/catalog-link-list.css';
+@import 'blocks/button/button.css';
+@import 'blocks/contact-information/contact-information.css';
+@import 'blocks/search-field/search-field.css';
+@import 'blocks/search-form/search-form.css';
+
+
+@font-face {
+	font-family: 'roboto';
+	font-weight: normal;
+	src: url('./fonts/roboto.woff') format('woff'),
+	     url('./fonts/roboto.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'roboto';
+	font-weight: medium;
+	src: url('./fonts/robotomedium.woff') format('woff'),
+	     url('./fonts/robotomedium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'roboto';
+	font-weight: bold;
+	src: url('./fonts/robotobold.woff') format('woff'),
+	     url('./fonts/robotobold.woff2') format('woff2');
+}
+
+body, html {
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.visually-hidden{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+body {
+	background: #849d8f;
+	background: radial-gradient(circle, rgb(205, 243, 222) 0px, transparent 500px),
+	#849d8f;
+	background-repeat: no-repeat;
+	background-position: 0 -130px;
+}
+
+.max-width-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}

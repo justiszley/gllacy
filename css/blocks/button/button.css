@@ -1,0 +1,35 @@
+.button {
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+	font-size: inherit;
+	background-color: rgba(255, 255, 255, .2);
+	padding: 7px 17px;
+	border: 0;
+	border-radius: 16px;
+}
+
+.button_type_search {
+	background-image: url(./img/search-icon.png);
+	background-repeat: no-repeat;
+	background-position: 9px 7px;
+	width: 32px;
+	height: 32px;
+}
+
+.button_type_entrance {
+	background-image: url(./img/entrance-icon.png);
+	background-repeat: no-repeat;
+	background-position: 17px 6px;
+	padding-left: 44px;
+	margin-left: 9px;
+}
+
+.button_type_cart {
+	background-image: url(./img/cart-icon.png);
+	background-repeat: no-repeat;
+	background-position: 16px 6px;
+	padding-right: 33px;
+	padding-left: 44px;
+	margin-left: 10px;
+}

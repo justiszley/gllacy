@@ -1,0 +1,18 @@
+.search-field {
+	position: relative;
+}
+
+.search-field__form {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: .5s;
+	right: 0;
+	top: 37px;
+}
+
+.search-field:hover .search-field__form {
+	opacity: 1;
+	visibility: visible;
+}

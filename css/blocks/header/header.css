@@ -1,0 +1,21 @@
+.header {
+	font-family: roboto, sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	color: white;
+	padding: 0 2.3%;
+	margin-top: 8px;
+}
+
+.header__user-interface {
+	display: flex;
+	margin-top: -4px;
+	margin-left: auto;
+	font-size: 14px;
+}
+
+.header__contact-information {
+	flex-basis: 100%;
+	text-align: right;
+}
