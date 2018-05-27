@@ -1,0 +1,13 @@
+.entrance-button {
+	position: relative;
+}
+
+.entrance-button_svg-icon {
+	position: absolute;
+	top: 6px;
+	left: 16px;
+}
+
+.entrance-button:hover .entrance-button_svg-icon g {
+	fill: #000;
+}

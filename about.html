@@ -9,7 +9,7 @@
 	<div class="max-width-wrapper">
 		<header class="header">
 			<a class="logo-link" href="index.html">
-				<img class="header__logo" src="img/headerLogo.png" alt="Logo of the shop" width="154px" height="64px">
+				<img class="header__logo" src="img/Logo.svg" alt="Logo of the shop" width="154px" height="64px">
 			</a>
 
 			<nav class="header__navigation header-navigation">
@@ -57,13 +57,44 @@
 
 			<div class="header__user-interface">
 				<div class="search-field">
-					<button class="button search-field__button button_type_search"><span class="visually-hidden">Search</span></button>
-					<form class="search-field__form search-form" action="post">
-						<input class="search-form__input" type="text" placeholder="Что ищем?">
+					<button class="button search-field__button button_type_search search-button">
+						<svg class="search-button_svg-icon" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+						<span class="visually-hidden">Search</span>
+					</button>
+
+					<form class="search-field__form form form_type_search" action="post">
+						<input class="form__input input" type="text" placeholder="Что ищем?" name="search">
 					</form>					
 				</div>
-				<button class="button button_type_entrance">Вход</button>
-				<button class="button button_type_cart">Пусто</button>
+
+				<div class="entrance-field">					
+					<button class="button button_type_entrance entrance-button">
+						<svg class="entrance-button_svg-icon" width="21" height="19"><image overflow="visible" width="21" height="19" /><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+						Вход
+					</button>
+
+					<form class="entrance-field__form
+											form 
+											form_type_entrance
+											entrance-form" action="post">
+
+						<input class="input form__input entrance-form__input" type="text" name="email" placeholder="Электронная почта">
+						<input class="input form__input entrance-form__input" type="password" name="password" placeholder="Пароль">
+
+						<button class="button 
+													button_background-gradint_red
+													entrance-form__button">Войти</button>
+
+						<div class="entrance-form__links-list">
+							<a class="entrance-form__links-item" href="forgot.html">Забыли пароль?</a>
+							<a class="entrance-form__links-item" href="#">Новая регистрация</a>
+						</div>
+					</form>
+				</div>
+
+				<button class="button button_type_cart">
+					<span>Пусто</span>
+				</button>
 			</div>
 
 			<section class="header__contact-information contact-information">

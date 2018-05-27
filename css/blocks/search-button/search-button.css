@@ -1,0 +1,13 @@
+.search-button {
+	position: relative;
+}
+
+.search-button_svg-icon {
+	position: absolute;
+	top: 7px;
+	left: 8px;
+}
+
+.search-button:hover .search-button_svg-icon path {
+	fill: #000;
+}

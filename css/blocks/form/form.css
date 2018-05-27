@@ -1,0 +1,21 @@
+.form {
+	display: flex;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .4);
+}
+
+.form__input {
+	flex-grow: 1;
+}
+
+.form_type_search {
+	padding: 19px 15px 20px;
+	width: 341px;
+}
+
+.form_type_entrance {
+	flex-wrap: wrap;
+	padding: 20px 19px;
+	width: 279px;
+}
