@@ -6,103 +6,245 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="max-width-wrapper">
-		<header class="header">
-			<a>				
-				<img class="header__logo" src="img/Logo.svg" alt="Logo of the shop" width="154px" height="64px">
-			</a>
 
-			<nav class="header__navigation header-navigation">
-				<ul class="header-navigation__list">
-					<li class="header-navigation__item catalog-link">
-						<a class="header-navigation__link" href="catalog.html">
-							<span class="header-navigation__link-content">Каталог</span>
-						</a>
-						<div class="catalog-link__wrapper">
-							<h2 class="catalog-link__header">Новинки</h2>
+	<input class="theme-radio" id="first-background" type="radio" name="theme" checked>
+	<input class="theme-radio" id="second-background" type="radio" name="theme">
+	<input class="theme-radio" id="third-background" type="radio" name="theme">
+	
+	<div class="theme-field">
+		<div class="max-width-wrapper">
+			<header class="header">
+				<a>				
+					<img class="header__logo" src="img/Logo.svg" alt="Logo of the shop" width="154px" height="64px">
+				</a>
 
-							<ul class="catalog-link__list catalog-link-list">
-								<li class="catalog-link-list__item">
-									<a class="catalog-link-list__link" href="icecreams/creamy.html">Сливочное</a>
+				<nav class="header__navigation header-navigation">
+					<ul class="header-navigation__list">
+						<li class="header-navigation__item catalog-link">
+							<a class="header-navigation__link" href="catalog.html">
+								<span class="header-navigation__link-content">Каталог</span>
+							</a>
+							<div class="catalog-link__wrapper">
+								<h2 class="catalog-link__header">Новинки</h2>
+
+								<ul class="catalog-link__list catalog-link-list">
+									<li class="catalog-link-list__item">
+										<a class="catalog-link-list__link" href="icecreams/creamy.html">Сливочное</a>
+									</li>
+
+									<li class="catalog-link-list__item">
+										<a class="catalog-link-list__link" href="icecreams/sorbet.html">Щербеты</a>
+									</li>
+
+									<li class="catalog-link-list__item">
+										<a class="catalog-link-list__link" href="icecreams/fruitice.html">Фруктовый лёд</a>
+									</li>
+
+									<li class="catalog-link-list__item">
+										<a class="catalog-link-list__link" href="icecreams/melorin.html">Мелорин</a>
+									</li>
+								</ul>							
+							</div>
+						</li>
+
+						<li class="header-navigation__item">
+							<a class="header-navigation__link" href="delivery.html">
+								<span class="header-navigation__link-content">Доставка и оплата</span>
+							</a>
+						</li>
+
+						<li class="header-navigation__item">
+							<a class="header-navigation__link" href="about.html">
+								<span class="header-navigation__link-content">O Компании</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__user-interface">
+					<div class="search-field">
+						<button class="button search-field__button button_type_search search-button">
+							<svg class="search-button_svg-icon" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+							<span class="visually-hidden">Search</span>
+						</button>
+
+						<form class="search-field__form form form_type_search" action="post">
+							<input class="form__input input" type="text" placeholder="Что ищем?" name="search">
+						</form>					
+					</div>
+
+					<div class="entrance-field entrance-field_marLeft">					
+						<a href="#" class="button button_type_entrance entrance-button">
+							<svg class="entrance-button_svg-icon" width="21" height="19"><image overflow="visible" width="21" height="19" /><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+							Вход
+						</a href="#">
+
+						<form class="entrance-field__form
+												form 
+												form_type_entrance
+												entrance-form" action="post">
+
+							<input class="input form__input entrance-form__input" type="text" name="email" placeholder="Электронная почта">
+							<input class="input form__input entrance-form__input" type="password" name="password" placeholder="Пароль">
+
+							<button class="button 
+														button_background-gradint_red
+														entrance-form__button">Войти</button>
+
+							<div class="entrance-form__links-list">
+								<a class="entrance-form__links-item" href="forgot.html">Забыли пароль?</a>
+								<a class="entrance-form__links-item" href="#">Новая регистрация</a>
+							</div>
+						</form>
+					</div>
+					
+					<div class="cart-field">
+						<button class="cart-field__btn button button_type_cart">
+							<span>Пусто</span>
+						</button>
+
+						<section class="cart-field__section cart-section cart-section_size_large">
+							<h2 class="visually-hidden">Товары в вашей корзине</h2>
+
+							<ul class="cart-section__list">
+								<li class="cart-section__item cart-item">
+									<button class="cart-item__delete-btn cross-delete-button"><span class="visually-hidden">delete</span></button>
+
+									<img class="cart-item__image" src="img/icecream1.png" alt="Пломбир с апельсиновым джемом" width="33px" height="33px">
+
+									<h3 class="cart-item__naming">Пломбир с апельсиновым джемом</h3>
+
+									<p class="cart-item__amount">1,5 кг x <span>200 руб.</span></p>
+
+									<p class="cart-item__cost">300 руб.</p>
 								</li>
 
-								<li class="catalog-link-list__item">
-									<a class="catalog-link-list__link" href="icecreams/sorbet.html">Щербеты</a>
-								</li>
+								<li class="cart-section__item cart-item">
+									<button class="cart-item__delete-btn cross-delete-button"><span class="visually-hidden">delete</span></button>
 
-								<li class="catalog-link-list__item">
-									<a class="catalog-link-list__link" href="icecreams/fruitice.html">Фруктовый лёд</a>
-								</li>
+									<img class="cart-item__image" src="img/icecream2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33px" height="33px">
 
-								<li class="catalog-link-list__item">
-									<a class="catalog-link-list__link" href="icecreams/melorin.html">Мелорин</a>
+									<h3 class="cart-item__naming">Клубничный пломбир с присыпкой из белого шоколада</h3>
+
+									<p class="cart-item__amount">1,5 кг x <span>300 руб.</span></p>
+
+									<p class="cart-item__cost">450 руб.</p>
 								</li>
-							</ul>							
-						</div>
+							</ul>
+
+							<p class="cart-section__sum">Итого: 750 руб.</p>
+
+							<button class="button button_background-gradint_red cart-section__button">Оформить заказ</button>
+						</section>
+					</div>
+				</div>
+
+				<section class="header__contact-information contact-information">
+					<h2 class="visually-hidden">contact information</h2>
+					<p class="contact-information__text">С 10 до 20, ежедневно</p>
+					<a class="contact-information__phone-number" href="tel: 88124502525">8 812 450-25-25</a>
+				</section>
+			</header>
+
+			<main>
+				<h1 class="visually-hidden">Магазин Мороженого GllacyShop</h1>
+				
+				<section class="promo-carousel">
+					<h2 class="visually-hidden">Комбинации мороженого</h2>
+
+					<ul class="promo-carousel__list">
+						<li class="promo-caruosel__item promo-caruosel__first">
+							<section>
+								<h3 class="promo-carousel__title">Крем-брюле и пломбир с малиновым джемом</h2>
+							</section>
+						</li>
+
+						<li class="promo-caruosel__item promo-caruosel__second">
+							<section>
+								<h3 class="promo-carousel__title">Шоколадный пломбир и лимонный сорбет</h2>
+							</section>
+						</li>
+
+						<li class="promo-caruosel__item promo-caruosel__third">
+							<section>
+								<h3 class="promo-carousel__title">Пломбир с помадкой<br> и клубничный щербет</h2>
+							</section>
+						</li>
+					</ul>
+
+					<div class="theme-controllers">
+						<label class="theme-controllers__item theme-controllers__first" for="first-background"><span class="visually-hidden">first theme</span></label>
+						<label class="theme-controllers__item theme-controllers__second" for="second-background"><span class="visually-hidden">second theme</span></label>
+						<label class="theme-controllers__item theme-controllers__third" for="third-background"><span class="visually-hidden">third theme</span></label>
+					</div>
+
+					<a class="button 
+					button_background-gradint_red
+					button_type_promo-carousel" href="catalog.html">Давайте оба!</a>
+				</section>
+
+				<ul class="promo-blocks">
+					<li class="promo-blocks__item promo-block promo-block_size_half promo-block_theme_raspberry">
+						<section>
+							<h2 class="promo-block__title">Малинка даром!</h2>
+							<p class="promo-block__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+							<a class="button 
+							button_background-gradint_red
+							button_type_promo-block
+							promo-block__button" href="catalog.html">Хочу варенье!</a>
+						</section>
 					</li>
 
-					<li class="header-navigation__item">
-						<a class="header-navigation__link" href="delivery.html">
-							<span class="header-navigation__link-content">Доставка и оплата</span>
-						</a>
-					</li>
-
-					<li class="header-navigation__item">
-						<a class="header-navigation__link" href="about.html">
-							<span class="header-navigation__link-content">O Компании</span>
-						</a>
+					<li class="promo-blocks__item promo-block promo-block_size_half promo-block_theme_chocolate">
+						<section">
+							<h2 class="promo-block__title">Шоколадки даром!</h2>
+							<p class="promo-block__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+							<a class="button 
+							button_background-gradint_red
+							button_type_promo-block
+							promo-block__button" href="catalog.html">Хочу шоколадки!</a>
+						</section>
 					</li>
 				</ul>
-			</nav>
 
-			<div class="header__user-interface">
-				<div class="search-field">
-					<button class="button search-field__button button_type_search search-button">
-						<svg class="search-button_svg-icon" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-						<span class="visually-hidden">Search</span>
-					</button>
+				<ul class="products-list">
+					<li class="products-list__item product product_hit">
+						<img class="product__image" src="img/bigIcecream1.png" alt="Мороженое" width="267" height="267">
+						
+						<p class="product__price">310 Р/<span class="product__measurement">кг</span></p>
 
-					<form class="search-field__form form form_type_search" action="post">
-						<input class="form__input input" type="text" placeholder="Что ищем?" name="search">
-					</form>					
-				</div>
+						<h3 class="product__title"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
+					</li>
 
-				<div class="entrance-field">					
-					<a href="#" class="button button_type_entrance entrance-button">
-						<svg class="entrance-button_svg-icon" width="21" height="19"><image overflow="visible" width="21" height="19" /><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-						Вход
-					</a href="#">
+					<li class="products-list__item product product_hit">
+						<img class="product__image" src="img/bigIcecream2.png" alt="Мороженое" width="267" height="267">
 
-					<form class="entrance-field__form
-											form 
-											form_type_entrance
-											entrance-form" action="post">
+						<p class="product__price">380 Р/<span class="product__measurement">кг</span></p>
 
-						<input class="input form__input entrance-form__input" type="text" name="email" placeholder="Электронная почта">
-						<input class="input form__input entrance-form__input" type="password" name="password" placeholder="Пароль">
+						<h3 class="product__title"><span>Сливочно-кофейное с кусочками шоколада</span></h3>
+					</li>
 
-						<button class="button 
-													button_background-gradint_red
-													entrance-form__button">Войти</button>
+					<li class="products-list__item product product_hit">
+						<img class="product__image" src="img/bigIcecream3.png" alt="Мороженое" width="267" height="267">
+						
+						<p class="product__price">355 Р/<span class="product__measurement">кг</span></p>
 
-						<div class="entrance-form__links-list">
-							<a class="entrance-form__links-item" href="forgot.html">Забыли пароль?</a>
-							<a class="entrance-form__links-item" href="#">Новая регистрация</a>
-						</div>
-					</form>
-				</div>
+						<h3 class="product__title"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
+					</li>
 
-				<button class="button button_type_cart">
-					<span>Пусто</span>
-				</button>
-			</div>
+					<li class="products-list__item product product_hit">
+						<img class="product__image" src="img/bigIcecream4.png" alt="Мороженое" width="267" height="267">
+						
+						<p class="product__price">415 Р/<span class="product__measurement">кг</span></p>
 
-			<section class="header__contact-information contact-information">
-				<h2 class="visually-hidden">contact information</h2>
-				<p class="contact-information__text">С 10 до 20, ежедневно</p>
-				<a class="contact-information__phone-number" href="tel: 88124502525">8 812 450-25-25</a>
-			</section>
-		</header>		
+						<h3 class="product__title"><span>Сливочное крем-брюле с карамельной подливкой</span></h3>
+					</li>
+				</ul>
+					
+			</main>
+			
+			
+		</div>
 	</div>
 </body>
 </html>

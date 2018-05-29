@@ -1,0 +1,33 @@
+.promo-carousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 272px;
+	margin-bottom: 42px;
+}
+
+.promo-carousel__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+	color: white;
+	width: 670px;
+	text-align: center;
+}
+
+.promo-caruosel__item {
+	display: none;
+}
+
+.promo-carousel__title {
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0;
+}
+
+#first-background:checked ~ .theme-field .promo-caruosel__first,
+#second-background:checked ~ .theme-field .promo-caruosel__second,
+#third-background:checked ~ .theme-field .promo-caruosel__third {
+	display: block;
+}

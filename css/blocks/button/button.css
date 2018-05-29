@@ -23,7 +23,6 @@
 
 .button_type_entrance {
 	padding-left: 44px;
-	margin-left: 9px;
 }
 
 .button_type_cart {
@@ -39,9 +38,25 @@
 	background-image: url(./img/filled-cart-icon.svg);
 }
 
+.button_type_promo-carousel {
+	font-size: 32px;
+	line-height: 44px;
+	margin-top: 33px;
+	padding: 9px 41px;
+	border-radius: 31px;
+}
+
+.button_type_promo-block {
+	font-size: 18px;
+	padding: 10px 24px;
+	border-radius: 23px;
+}
+
 .button_background-gradint_red {
 	background: linear-gradient(to bottom, #f26843, #e74b36);
+	font-weight: bold;
 	box-shadow: 0 2px 2px 0px #bf4a3d;
+	color: white;
 }
 
 .button_background-gradint_red:hover {

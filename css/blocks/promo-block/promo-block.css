@@ -1,0 +1,37 @@
+.promo-block {
+	color: white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 13px;
+	padding: 14px 20px 25px;
+}
+
+.promo-block__title {
+	margin: 0;
+	font-size: 35px;
+	line-height: 41px;
+	margin-bottom: 16px;
+}
+
+.promo-block__description {
+	margin: 0;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 45px;
+}
+
+.promo-block__button {
+	float: right;
+}
+
+.promo-block_size_half {
+	width: 49%;
+}
+
+.promo-block_theme_raspberry {
+	background-image: url(img/raspberry.jpg);
+}
+
+.promo-block_theme_chocolate {
+	background-image: url(img/chocolate.jpg);
+}

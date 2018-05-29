@@ -1,0 +1,28 @@
+.theme-controllers {
+	position: absolute;
+	top: 563px;
+	left: 2.4%;
+	display: flex;
+}
+
+.theme-controllers__item {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.theme-controllers__item:hover {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.theme-controllers__item:nth-of-type(n + 2) {
+	margin-left: 9px;
+}
+
+#first-background:checked ~ .theme-field .theme-controllers__first,
+#second-background:checked ~ .theme-field .theme-controllers__second,
+#third-background:checked ~ .theme-field .theme-controllers__third {
+	background-color: white;
+}

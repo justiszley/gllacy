@@ -1,0 +1,33 @@
+.cart-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cart-item__image {
+	margin-left: 9px;
+}
+
+.cart-item__naming {
+	width: 220px;
+	margin: 0;
+	margin-left: 11px;
+	margin-top: 9px;
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+.cart-item__amount {
+	margin: 0;
+	margin-left: 27px;
+	margin-top: 9px;
+}
+
+.cart-item__amount span {
+	color: #999;
+}
+
+.cart-item__cost {
+	margin: 0;
+	margin-left: 27px;
+	margin-top: 9px;
+}

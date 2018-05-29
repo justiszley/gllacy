@@ -12,3 +12,13 @@
 @import 'blocks/entrance-form/entrance-form.css';
 @import 'blocks/entrance-field/entrance-field.css';
 @import 'blocks/entrance-button/entrance-button.css';
+@import 'blocks/cart-field/cart-field.css';
+@import 'blocks/cart-section/cart-section.css';
+@import 'blocks/cart-item/cart-item.css';
+@import 'blocks/cross-delete-button/cross-delete-button.css';
+@import 'blocks/theme-controllers/theme-controllers.css';
+@import 'blocks/promo-carousel/promo-carousel.css';
+@import 'blocks/promo-blocks/promo-blocks.css';
+@import 'blocks/promo-block/promo-block.css';
+@import 'blocks/products-list/products-list.css';
+@import 'blocks/product/product.css';

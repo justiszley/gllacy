@@ -1,0 +1,47 @@
+.product {
+	position: relative;
+	text-align: center;
+	padding: 1%;
+	border-radius: 6px;
+}
+
+.product_hit::before {
+	content: url(img/hit.svg);
+	position: absolute;
+}
+
+.product:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.product__image {
+	max-width: 267px;
+	width: 100%;
+	height: auto;
+}
+
+.product__price {
+	position: absolute;
+	color: white;
+	margin: 0;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	top: 218px;
+}
+
+.product__measurement {
+	font-size: 30px;
+}
+
+.product__title {
+	margin: 0;
+	color: white;
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 11px;
+}
+
+.product__title span {
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}

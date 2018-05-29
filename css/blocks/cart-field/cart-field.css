@@ -1,8 +1,8 @@
-.entrance-field {
+.cart-field {
 	position: relative;
 }
 
-.entrance-field__form {
+.cart-field__section {
 	position: absolute;
 	right: -5px;
 	top: 36px;
@@ -12,11 +12,12 @@
 	transition-duration: .5s;
 }
 
-.entrance-field:hover .entrance-field__form {
+.cart-field__btn:focus + .cart-field__section {
 	opacity: 1;
 	visibility: visible;
 }
 
-.entrance-field_marLeft {
-	margin-left: 9px;
+.cart-field__section:hover {
+	opacity: 1;
+	visibility: visible;
 }
