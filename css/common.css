@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: 'roboto';
-	font-weight: medium;
+	font-weight: lighter;
 	src: url('../fonts/robotomedium.woff') format('woff'),
 	     url('../fonts/robotomedium.woff2') format('woff2');
 }
@@ -65,21 +65,18 @@ body {
 
 #first-background:checked ~ .theme-field {
 	background: #849d8f;
-	background: url(../img/banner1.png) no-repeat center 82px,
-	radial-gradient(circle, #cef5e0 0px, transparent 500px),
+	background: url(../img/banner1.png) no-repeat center 0,
 	#849d8f;
 }
 
 #second-background:checked ~ .theme-field {
 	background: #8996a6;
-	background: url(../img/banner2.png) no-repeat center 82px,
-	radial-gradient(circle, #cce0f1 0px, transparent 500px),
+	background: url(../img/banner2.png) no-repeat center 0,
 	#8996a6;
 }
 
 #third-background:checked ~ .theme-field {
 	background: #9d8b84;
-	background: url(../img/banner3.png) no-repeat center 82px,
-	radial-gradient(circle, #ebd6cd 0px, transparent 500px),
+	background: url(../img/banner3.png) no-repeat center 0,
 	#9d8b84;
 }

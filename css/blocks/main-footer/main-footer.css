@@ -1,0 +1,16 @@
+.main-footer {
+	display: flex;
+	justify-content: space-between;	
+	padding: 0 2.3%;
+	padding-top: 19px;
+	padding-bottom: 22px;
+}
+
+.main-footer__social {
+	margin-top: 16px;
+}
+
+.main-footer__extra-links {
+	margin-left: 30px;
+	margin-top: 13px;
+}

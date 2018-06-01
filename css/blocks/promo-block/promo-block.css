@@ -35,3 +35,84 @@
 .promo-block_theme_chocolate {
 	background-image: url(img/chocolate.jpg);
 }
+
+.promo-block_theme_blog {	
+	background-image: url(img/blog-background.jpg);
+	background-position: -27px -225px;
+	color: #323232;
+	padding-top: 21px;
+	padding-bottom: 82px;
+}
+
+@media (max-width: 1100px) {
+	.promo-block_theme_blog {
+		background-position: -96px -225px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.promo-block_theme_blog {
+		background-position: -153px -225px;
+	}
+}
+
+.promo-block__title_theme_blog {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.promo-block__description_theme_blog {
+	color: inherit;
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	width: 320px;
+	margin: 0;
+}
+
+.promo-block__description_theme_mailing {
+	color: #5a5a5a;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: lighter;
+	margin-bottom: 35px;
+}
+
+.promo-block_theme_mailing {
+	background-image: url(img/mailing-background.svg);
+	padding: 5px 6px;
+}
+
+.promo-block_theme_mailing section {
+	background-color: #f8f7f4;
+	border-radius: 13px;
+	height: 100%;
+	padding-top: 27px;
+	padding-left: 23px;
+	padding-right: 15px;
+}
+
+.promo-block_theme_mailing form {
+	display: flex;
+}
+
+.promo-block_theme_mailing input {
+	flex-grow: 1;
+}
+
+.promo-block_theme_mailing input::placeholder {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.promo-block_theme_mailing button {
+	margin-left: 10px;
+	padding: 0;
+	width: 127px;
+	height: 44px;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 28px;
+}

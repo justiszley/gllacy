@@ -1,0 +1,15 @@
+.map-section {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 430px;
+	overflow: hidden;
+	margin-top: 38px;
+}
+
+.map-section__info {
+	position: absolute;
+	top: 63px;
+	right: 27px;
+}

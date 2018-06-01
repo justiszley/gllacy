@@ -1,8 +1,10 @@
 .products-list {
 	margin: 0;
+	margin-bottom: 28px;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	padding: 0 2.3%;
 }
 

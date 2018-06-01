@@ -22,3 +22,10 @@
 @import 'blocks/promo-block/promo-block.css';
 @import 'blocks/products-list/products-list.css';
 @import 'blocks/product/product.css';
+@import 'blocks/waffle-advert/waffle-advert.css';
+@import 'blocks/map-section/map-section.css';
+@import 'blocks/map-section-info/map-section-info.css';
+@import 'blocks/main-footer/main-footer.css';
+@import 'blocks/social-list/social-list.css';
+@import 'blocks/extra-links/extra-links.css';
+@import 'blocks/footer-copyright/footer-copyright.css';

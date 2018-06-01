@@ -1,0 +1,65 @@
+.waffle-advert {
+	background-image: url(img/waffle-pattern.jpg);
+	color: #323232;
+	padding: 25px 20px;
+	border-radius: 18px;
+	margin: 0 2.3%;
+	margin-bottom: 40px;
+}
+
+.waffle-advert__title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.waffle-advert__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.waffle-advert__item {
+	position: relative;
+	flex-basis: 40%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding-left: 57px;
+	padding-top: 22px;
+}
+
+.waffle-advert__item:nth-of-type(2n) {
+	margin-left: 28px;
+}
+
+.waffle-advert__item::before {
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+
+.waffle-advert__item:nth-of-type(1)::before {
+	content: url(img/icecream.svg);
+}
+
+.waffle-advert__item:nth-of-type(2)::before {
+	content: url(img/cow.svg);
+}
+
+.waffle-advert__item:nth-of-type(3)::before {
+	content: url(img/leaf.svg);
+}
+
+.waffle-advert__item:nth-of-type(4)::before {
+	content: url(img/thermometer.svg);
+}
+
+.waffle-advert__text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+
