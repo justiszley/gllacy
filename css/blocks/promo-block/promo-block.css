@@ -41,6 +41,7 @@
 	background-position: -27px -225px;
 	color: #323232;
 	padding-top: 21px;
+	padding-right: 215px;
 	padding-bottom: 82px;
 }
 
@@ -64,12 +65,16 @@
 
 .promo-block__description_theme_blog {
 	color: inherit;
-	display: block;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
 	width: 320px;
 	margin: 0;
+}
+
+.promo-block__description_theme_blog:hover,
+.promo-block__description_theme_blog:active {
+	color: #e84d37;
 }
 
 .promo-block__description_theme_mailing {
